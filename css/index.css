@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  ---font: "Ubuntu", sans-serif;
+  ---main-bg: linear-gradient(to right, #140e38, #194089);
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+li {
+  list-style-type: none;
+}
+body {
+  font-family: "Montserrat" !important;
+}
+.layout-wrapper {
+  max-width: 1280px;
+}
+.navbar-brand {
+  width: 150px;
+  height: auto;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+.nav-link {
+  font-family: "Montserrat";
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.nav-link::after {
+  content: "";
+  height: 3.5px;
+  width: 50%;
+  display: none;
+  background: #9e48cd;
+  position: relative;
+  left: 50%;
+  margin-top: 4px;
+  transform: translatex(-50%);
+  transition: all 1s ease;
+}
+.nav-link:hover::after {
+  display: block;
+}
+
+.navbar-nav {
+  height: 1.8rem;
+}
+#navbarNav {
+  height: 100%;
+}
+
+.nav-top {
+  padding: 2em 0;
+}
+.col1 .banner-title,
+.col3 .discover-title,
+.step-title {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  color: #9e48cd;
+  font-weight: bold;
+}
+.col1 hr,
+.col3 hr,
+.steps hr,
+.col7 hr {
+  border-top: 2px solid #9e48cd;
+  width: 10vw;
+}
+.col1 .banner-para {
+  font-size: 56px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  line-height: 68px;
+  color: #fff;
+}
+.col1 .banner-subpara {
+  font-size: 22px;
+  color: #fff;
+  font-family: "Montserrat";
+}
+.col1 .btn,
+.col3 .btn {
+  width: 20vw;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  border-radius: 10px;
+}
+.col1 .btn-primary,
+.col3 .btn-primary {
+  background: linear-gradient(
+    40deg,
+    #bf68e6 20%,
+    #9e48cd 51%,
+    #bf68e6 90%
+  ) !important;
+  border-color: #9e48cd !important;
+}
+
+.carousel-img-cont {
+  height: 72vh !important;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.carousel-img-cont-2 {
+  height: 68.4vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.bannerImage img {
+  height: auto;
+  width: 80%;
+}
+
+.slide-1 {
+  background: url("../Assets/Slide-2.jpg") no-repeat center;
+  background-size: cover;
+}
+.slide-2 {
+  background: url("../Assets/group.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.slide-2::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: rgba(102, 102, 158, 0.85);
+}
+
+.hero-text-container {
+  padding: 0 10rem;
+  color: #1c1e37;
+}
+
+.hero-bext-container {
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-cont {
+  background-color: linear-gradient(to right, #140e38, #194089);
+}
+
+.hero-text-container h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.hero-text-container div {
+  font-size: 28px;
+}
+.hero-text-container button {
+  background: linear-gradient(to right, #140e38, #194089);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 1rem;
+  font-size: 18px;
+}
+.fa-angle-left,
+.fa-angle-right {
+  color: #9e48cd;
+  font-size: 30px;
+  z-index: 2;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+}
+.carousel-control-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  background: rgb(250, 248, 245);
+  width: 50px;
+  height: 50px;
+}
+.carousel-indicators button.active {
+  background-color: #9e48cd;
+}
+.hero-bext-container h1 {
+  font-size: 72px;
+  line-height: 68px;
+}
+.hero-bext-container .animated-num {
+  font-size: 70px;
+  line-height: 60px;
+  animation-name: example;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  color: #fff;
+}
+/*filter section */
+.filter-dropDown .btn-secondary,
+.accordion-button {
+  background: linear-gradient(to right, #140e38, #194089) !important;
+  color: #fff !important;
+}
+.filter-dropDown .dropdown .btn {
+  text-transform: uppercase;
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.filter-dropDown .dropdown-menu {
+  padding: 20px 20px;
+}
+.filter-dropDown .number-search .btn-primary {
+  background: linear-gradient(to right, #140e38, #194089) !important;
+  color: #fff;
+}
+.filter-dropDown .number-search input {
+  width: auto;
+  height: 5vh;
+  border: 2px solid #194089 !important;
+  padding: 8px;
+}
+.filter-dropDown .number-search .btn {
+  width: auto;
+  height: 5vh;
+  margin-left: 3px;
+}
+.filter-dropDown .category {
+  width: 20vw;
+}
+.filter-dropDown .category .dropdown-item {
+  color: #000 !important;
+}
+.filter-dropDown .category .dropdown-item:hover {
+  background: linear-gradient(to right, #140e38, #194089) !important;
+  color: #fff !important;
+}
+/* search*/
+
+.serach .btn-secondary {
+  background: linear-gradient(to right, #140e38, #194089) !important;
+  color: #fff;
+}
+.serach .dropdown .btn {
+  text-transform: uppercase;
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.serach .dropdown-item {
+  color: #000 !important;
+}
+.serach .dropdown-item:hover {
+  background: linear-gradient(to right, #140e38, #194089) !important;
+  color: #fff !important;
+}
+.serach input {
+  width: 45vw;
+  padding: 8px;
+  height: 5vh;
+}
+.serach .btn-primary {
+  background: linear-gradient(to right, #140e38, #194089) !important;
+  color: #fff !important;
+}
+.serach .btn {
+  text-transform: uppercase;
+}
+.sort .btn-primary {
+  background: linear-gradient(to right, #140e38, #194089) !important;
+  color: #fff !important;
+}
+.sort .btn {
+  text-transform: uppercase;
+}
+/* card*/
+.number-card {
+  width: 30vw;
+  height: auto;
+  background-color: #fafafa;
+  border-radius: 20px;
+  margin-top: 40px;
+  border: 2px solid #172862;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.number-card .mrp,
+.number-card .price {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+.number-card .mrp {
+  text-decoration: line-through;
+}
+.number-card .price {
+  position: relative;
+}
+
+.number-card .vipNumber {
+  background-color: #172862;
+}
+.vipNumber h1 {
+  font-size: 30px;
+  color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+}
+.vipNumber h2 {
+  font-size: 15px;
+  color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+}
+.other-details h1 {
+  font-size: 12px;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.other-details h1:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.other-details h1:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(90deg);
+}
+.other-details h1:nth-child(2)::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(90deg);
+}
+.other-details .readyPort {
+  background-color: #dc3545;
+  color: #fafafa;
+  width: 40px;
+  text-align: center;
+}
+.cart-button .btn-primary {
+  background-color: #172862;
+  border-color: #172862;
+  color: #fafafa;
+}
+.cart-button .btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.cart-button .btn-primary:hover {
+  background-color: #172862;
+  border-color: #172862;
+}
+/* footer section */
+footer {
+  background: linear-gradient(to right, #140e38, #194089);
+  color: white;
+  padding: 3em 0;
+}
+footer h2 a {
+  color: #fafafa !important;
+}
+
+.ftco-animate span {
+  font-size: 30px;
+}
+
+.ftco-animate span:hover {
+  color: #9e48cd;
+}
+
+.foot-r p {
+  font-size: 16px;
+}
